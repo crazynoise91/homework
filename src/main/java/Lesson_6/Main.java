@@ -1,4 +1,4 @@
-package untitled;
+package Lesson_6;
 
 class Product {
     private final String name;
