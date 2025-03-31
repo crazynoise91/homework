@@ -1,6 +1,12 @@
 package untitled;
 
 class Product {
+    private final String name;
+    private final String productionDate;
+    private final String manufacturer;
+    private final String countryOfOrigin;
+    private final double price;
+    private final boolean isReserved;
 
     // Конструктор
     public Product(String name, String productionDate, String manufacturer, String countryOfOrigin, double price, boolean isReserved) {
@@ -25,6 +31,8 @@ class Product {
 }
 
 class Park {
+    private final String name;
+    private final Attraction[] attractions;
 
     // Конструктор
     public Park(String name, int numberOfAttractions) {
@@ -33,6 +41,10 @@ class Park {
     }
 
     // Внутренний класс Attraction
+    static class Attraction {
+        private final String attractionName;
+        private final String workingHours;
+        private final double ticketPrice;
 
         // Конструктор
         public Attraction(String attractionName, String workingHours, double ticketPrice) {
